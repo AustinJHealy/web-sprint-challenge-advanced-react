@@ -16,7 +16,6 @@ export default class PlantList extends Component {
       this.setState({
         plants: res.data.plantsData
       });
-      console.log(this.state)
     });
   }// when the component mounts:
   //   - fetch data from the server endpoint - http://localhost:3333/plants
