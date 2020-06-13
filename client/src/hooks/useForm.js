@@ -12,5 +12,5 @@ export const useForm = (initialValue) => {
     e.preventDefault();
     setShowSuccessMessage(true);
   };
-  return [values, showSuccessMessage,handleChanges, handleSubmit];
+  return [values, showSuccessMessage, handleChanges, handleSubmit];
 };
