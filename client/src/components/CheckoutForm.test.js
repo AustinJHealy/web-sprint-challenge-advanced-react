@@ -1,9 +1,7 @@
 import React from "react";
 import {
   render,
-  getByText,
   fireEvent,
-  getByTestId,
 } from "@testing-library/react";
 import CheckoutForm from "./CheckoutForm";
 
