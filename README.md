@@ -30,13 +30,23 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 
 1. Explain how to build stateful class components.
 
+You have to extend React.Component to define your component as a class and use this.state to intitialize state inside of the constructor method. We can define the shape of our data and then update it later based on input from the user.
+
 2. Describe the different phases of the component lifecycle.
+
+The Birth or Mounting phase is when render is called and so is any code inside of componentDidMount(), state is intitialized. The second is the Growth or Updating phase, this is when setState() can be used to change state and re-render the page. The last is the Death or unmounting phase. This is when the component is removed from the screen and componentWillUnmount()
 
 3. Demonstrate an understanding of class component lifecycle methods.
 
+Lifecycle methods are basically a collection of methods that run at different times in the process of executing our code. The constructor(), render(), and componentDidMount() methods are all lifecycle methods that are called during the mounting phase. Render() is called again during the updating phase and so is componentDidUpdate().Every component has lifecycle methods that you can override to run code at certain times in the process.
+
 4. Define stateful logic.
 
+Stateful logic is contained in the functions that we build to handle things like input and submit handler functions and basically any function that can be re-used and performs a certain task or operation.
+
 5. Describe how to test a React component with React Testing Library.
+
+There are three steps to take when testing your component with React Testing Library. The first is to arrange the data by using queries to "grab" the elements we want to test. The next step is the "Act" phase. This is when we perform actions on our elements that would mimic those of an actual user. The last step is the "Assert" phase and this is where we use functions like "expect()" and "toBe...()" to describe the behavior we expect from the elements we have selected for testing.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
